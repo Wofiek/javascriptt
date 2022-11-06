@@ -1,0 +1,45 @@
+<html>
+<head>
+<form><textarea name="nazwa" cols="30" rows="40" readonly><html>
+    <html>
+        <body>
+        <div style="color:red;font-size:13mm;">
+        <script language="JavaScript">
+        var liczba1=prompt("c=","");
+        var liczba2=prompt("b=","");
+        var c_szul=parseFloat(liczba1);
+        var b_szul=parseFloat(liczba2);
+        var a_szul=Math.sqrt(Math.pow(c_szul,2)-Math.pow(b_szul,2));
+        document.write("c="+c_szul.toFixed(2)+"cm"+"<br>");
+        document.write("b="+b_szul.toFixed(2)+"cm"+"<br>");
+        document.write("a="+a_szul.toFixed(2)+"cm"+"<br>");
+        var h1=a_szul;
+        var h2=b_szul;
+        var h3=(a_szul*b_szul)/c_szul;
+        document.write("h1="+h1.toFixed(2)+"cm"+"<br>");
+        document.write("h2="+h2.toFixed(2)+"cm"+"<br>");
+        document.write("h3="+h3.toFixed(2)+"cm"+"<br>");
+        var sin_alfa=a_szul/c_szul;
+        var cos_alfa=b_szul/c_szul;
+        var tangens_alfa = a_szul/b_szul;
+        var cotangens_alfa = b_szul/a_szul;
+        document.write("sin alfa="+sin_alfa.toFixed(3)+"<br>");
+        document.write("cos alfa="+cos_alfa.toFixed(3)+"<br>");
+        document.write("tg alfa="+tangens_alfa.toFixed(3)+"<br>");
+        document.write("ctg alfa="+cotangens_alfa.toFixed(3)+"<br>");
+        var beta=Math.asin(b_szul/c_szul)*(180/Math.PI);
+        var alfa=90-beta;
+        document.write("alfa="+alfa.toFixed(3)+"st"+"<br>");
+        document.write("beta="+beta.toFixed(3)+"st"+"<br>");
+        var obwod=a_szul+b_szul+c_szul;
+        document.write("obwod="+obwod.toFixed(2)+"cm"+"<br>");
+        var pole=b_szul*a_szul/2;
+        document.write("pole="+pole.toFixed(2)+"cm"+"<br>");
+        </script>
+        </div>
+        </body>
+    </html>
+        
+  </textarea>
+  </body>
+  </html>

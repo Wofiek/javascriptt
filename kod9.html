@@ -1,0 +1,27 @@
+<html>
+<head>
+<form><textarea name="nazwa" cols="30" rows="40" readonly><html>
+    <html>
+        <body>
+        <div style="color:red;font-size:50px;">
+         <script language="JavaScript">
+          var liczba1=prompt("dzień1=","");
+          var liczba2=prompt("dzień2=","");
+          var liczba3=prompt("godzina1=","");
+          var liczba4=prompt("godzina2=","");
+          var ile_sekund_szul;
+          var D1_szul=parseFloat(liczba1);
+          var D2_szul=parseFloat(liczba2);
+          var G1_szul=parseFloat(liczba3);
+          var G2_szul=parseFloat(liczba4);
+         ile_sekund_szul=(D1_szul-D2_szul-G1_szul-G2_szul)*24*3600;
+        document.write("sekundy="+ile_sekund_szul+" s"+"<br>");
+        document.write("dz1="+D1_szul+"<br>");
+        document.write("dz2="+D2_szul+"<br>");
+        document.write("go1="+G1_szul+"<br>");
+        document.write("go2="+G2_szul+"<br>");
+         </script>
+        </div>
+        </body>
+    </html>
+        

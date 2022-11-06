@@ -1,0 +1,27 @@
+<html>
+ <head>
+   <title>Prompt Box</title>
+ <script type="text/javascript">
+ function show_prompt()
+ {
+ var t=prompt("Napisz imię"," ");
+ if (t!=null && t!="")
+ {
+ document.write("Witaj " + t + "!");
+ }
+ } 
+   </script>
+   <script type="text/javascript">
+function okno_zamknij_szulist()
+{
+window.close()
+}
+ </script>
+</head>
+<body>
+  <u>Zastosowanie:</u><br>
+  okno, które może posłużyć do wprowadzania danych (instrukcja wejścia) – oczywiście w praktyce lepiej jest użyć pól edycyjnych, ale istnieje możliwość pobrania wartości także w oknie dialogowym. Drugi argument funkcji prompt() (w przykładzie poniżej słowo “Adam”) to tzw. placeholder, czyli wartość domyślna (od razu będzie ona zaznaczona, tak aby rozpoczęcie pisania usunęło ją z okna dialogowego)
+ <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_szulist()"/>
+ </body>
+</html> 

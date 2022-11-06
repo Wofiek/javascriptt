@@ -1,0 +1,30 @@
+<html>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var liczba1=prompt("Podaj pierwsza liczbe=","");
+var liczba2=prompt("Podaj druga liczbe=","");
+var c,d,e,f,wynik;
+var a_szul=parseFloat(liczba1);
+var b_szul=parseFloat(liczba2);
+ 
+document.write("wczytane liczby: A="+a_szul+" B= "+b_szul+"<br>");
+document.write( "( "+a_szul+" + "+b_szul+")^3=");
+document.write( a_szul+"^3"+"+3*");
+document.write( a_szul+"^2"+"*"+b_szul);
+document.write( "+3"+"*"+a_szul);
+document.write( "*"+b_szul+"^2+"+b_szul+"^3=");
+c=a_szul*a_szul*a_szul
+d=3*a_szul*a_szul*b_szul
+e=3*a_szul*b_szul*b_szul
+f=b_szul*b_szul*b_szul
+wynik=c+d+e+f
+document.write( "<br>"+c );
+document.write( "+"+d );
+document.write( "+"+e );
+document.write( "+"+f+"=" );
+document.write( "<br>"+wynik );
+</script>
+</div>
+</body>
+</html>
