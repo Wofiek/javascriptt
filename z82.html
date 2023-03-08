@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<body>
+<h1 style="color: red; font-size: 70px"> Szulist </h1> 
+<h2 style="color: green; font-size: 15px"> dzis = new Date() --> Zwraca wartość którą jest data i godzina oraz minuty <br>
+dzis = dzis.getHours() --> Zwraca wartość (godzine od 0 do 23) <br>
+dzis = dzis.getMinutes() --> Zwraca wartość (minuty od 0 do 59) <br>
+dzs = dzis.getMonth() --> Zwraca wartość (miesiące od 0 do 11 ;; 0 = styczeń itd...) <br>
+dzis = dzis.getDate() --> Zwraca wartość (dzień miesiąca od 1 do 31) <br>
+dzis = getFullYear() --> Zwraca wartość (rok 4 liczby daty) </h2>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+document.write("<br>Aktualna data : ",dzis.getMonth()+1,",",dzis.getDate(),",",dzis.getFullYear());
+</script>
+</body>
+</html>
