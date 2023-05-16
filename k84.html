@@ -1,0 +1,67 @@
+<textarea rows="80" cols="300">
+    <!DOCTYPE html>
+<html>
+<head>
+<title> z84 </title>
+</head>
+<body>
+
+<script>
+
+dzis_szu = new Date();
+document.write("<br> Aktualny czas : ",dzis_szu.getHours(),":",dzis_szu.getMinutes());
+
+</script>
+
+<p id="pokaz1">0.000</p>
+
+<input type="button" name="Button1" value="START stoper" onclick="szulist_start()">
+<input type="button" name="Button1" value="STOP stoper" onclick="szulist_stop()">
+<input type="button" name="Button1" value="RESET stoper" onclick="szulist_reset()">
+
+<script>
+
+var czas = 0;
+var pokaz1 = document.getElementById("pokaz1");
+var zero;
+
+var start_szu;
+var poczatek_szu;
+var stop_szu;
+var koniec_szu;
+var roznica_szu;
+
+
+function szulist_start() 
+{
+    start_szu = new Date();
+    poczatek_szu = start_szu.getTime()
+}
+
+
+function szulist_stop() 
+{
+    stop_szu = new Date();
+    koniec_szu = stop_szu.getTime()
+ 
+    roznica_szu = koniec_szu - poczatek_szu;
+    pokaz1.innerHTML = roznica_szu/1000+" s";
+} 
+
+function szulist_reset() 
+{
+    clearInterval(czas);
+    zero = 0;
+    pokaz1.innerHTML = "0.000";
+}
+
+
+</script>
+
+<table tutaj obramowanie>
+    <tr id="pokaz1"></tr>
+</table>
+
+</body>
+</html>
+</textarea>
